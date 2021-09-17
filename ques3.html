@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question 3</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style type="text/css">
+		.tothenew{
+			background-color: blue;
+			color: white;
+		}
+		.div2{
+			background-color: yellow;
+			color: white;
+		}
+		.thenew{
+			background-color: pink;
+			color: white;
+		}
+		
+	</style>
+</head>
+<body>
+<div id="test" class="tothenew">
+<p>this is jquery tutorial</p>
+</div>
+<div id="test" class="div2">
+<p>this is a paragraph</p>
+</div>
+<div id="test" class="thenew">
+<p>this is other paragraph</p>
+</div>
+
+
+<script>
+	    $(document).ready(function() {	           $("div[class$='new']").css("background-color","blue")
+	                });
+
+</script>
+</body>
+</html>

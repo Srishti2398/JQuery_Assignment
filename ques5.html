@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Ques5</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+           
+    </head>
+    <body>
+        <div id="main">
+            <p class="target"> this is jquery assignment</p>
+        </div>
+        
+        <div id="div2">
+            <p class="target">this is a paragraph</p>
+        </div>
+        <center><button class="target">click here to change the font.</button></center>
+        
+            <script>
+                $(document).ready(function() {
+                    $("button").click(function() {
+
+                        $(".target").parent("#main").css('font-size', '200%');
+                    });
+        
+                });
+            </script>
+            
+            
+    </body>
+</html>

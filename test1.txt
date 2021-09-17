@@ -1,0 +1,1 @@
+AJAX,Asynchronus Javascript XML,a new technique used to make pages dynamic in both client and Server sides,The purpose of AJAX is to achieve multitasking,since there is not only one script running all tasks rather than multiple scripts are used.

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Ques7</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+           
+    </head>
+    <body>
+        <center>
+            <p id="button1"></p>
+            <button>click me for text</button>
+            </center>
+            
+            <script>
+                $(document).ready(function() {
+                    $("button").click(function() {
+                        
+                        $("#button1").append("click me for text <br>")
+                    });
+                    $("button1").click(function() {
+                        
+                        $("button1").append("click me for text <br>")
+                    });
+                });
+            </script>
+            
+       
+            
+    </body>
+</html>

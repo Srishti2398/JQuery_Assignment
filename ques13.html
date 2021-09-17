@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Ques13</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+       
+        <div class="test">
+
+            Line1 in div_1<br>
+            Line2 in div_1<br>
+          </div>
+           <br>
+          <div class="test">
+            Line1 in div_2<br>
+            Line2 in div_2<br>
+            Line3 in div_2<br>
+            Line4 in div_2<br>
+      
+          </div>
+         <br>
+          <div class="test">
+            Line1 in div_3 <br>
+            Line2 in div_3 <br>
+            Line3 in div_3<br>      
+          </div>
+           <br>
+      
+          <div class="test">
+            Line1 in div_4<br>
+            Line2 in div_4<br>
+          </div>
+      
+      <script>
+      
+      $(document).ready(function()
+      {
+              var highest = null;
+              var hi = 0;
+             $(".test").each(function()
+             {
+               var h = $(this).height();
+      
+                    if(h > hi){
+                         hi = h;
+                         highest=$(this);
+                          }         
+            });
+              alert('max height'+hi); 
+               $(highest).css("background-color","blue");   
+      });
+      
+      
+      </script>
+
+
+            
+       
+            
+    </body>
+</html>

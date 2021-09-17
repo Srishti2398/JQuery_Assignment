@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Ques8</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+           
+    </head>
+    <body>
+        <div></div>
+            <center><button>click here</button></center>
+           
+            <script>
+               $(document).ready(function() {
+		$("button").click(function() {
+    $("div").append("<p>click me</p>")
+$("div").on("click",function(){
+      $("div").append("<p>click me</p>") });
+});
+	});
+            </script>
+            
+        
+            
+       
+            
+    </body>
+</html>

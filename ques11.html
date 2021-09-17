@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Ques11</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+       
+        <center>
+
+            <p>block the google</p>
+            <a id='a' href='http://www.google.com'> google<p></a>
+            
+        </center>
+
+        <script>
+            $(document).ready(function() {
+          
+             $('#a').click(function (e) {
+              e.preventDefault();
+              alert('cannot access google');
+          
+             });
+          
+            });
+            
+        </script>
+            
+            
+       
+            
+    </body>
+</html>

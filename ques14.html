@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Ques14</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 5px;
+                text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <table style="width:100%" id="employee">
+            <center><strong>Employee Details</strong><center>
+            <tr>
+              <th class="srno">Id</th>
+              <th class="name">Employee Name</th>
+              <th class="post">Designation</th>
+              
+            </tr>
+            <tr>
+              <td class="srno">19</td>
+              <td class="name">Allen</td>
+            
+              <td class="post">President</td>
+            </tr>
+            <tr>
+              <td class="srno">7</td>
+              <td class="name">Ward</td>
+              
+              <td class="post">Analyst</td>
+            </tr>
+            <tr>
+              <td class="srno">8</td>
+              <td class="name">Jones</td>
+              <td class="post">Executive</td>
+              
+            </tr>
+            <tr>
+              <td class="srno">15</td>
+              <td class="name">Smith</td>
+              
+              <td class="post">Manager</td>
+            </tr>
+            <tr>
+                <td class="srno">12</td>
+                <td class="name">Jerry</td>
+                
+                <td class="post">Scientist</td>
+            </tr>
+            <tr>
+                <td class="srno">9</td>
+                <td class="name">Philip</td>
+                
+                <td class="post">Analyst</td>
+            </tr>
+            <tr>
+                <td class="srno">13</td>
+                <td class="name">Marry</td>
+                
+                <td class="post">Manager</td>
+            </tr>
+            <tr>
+                <td class="srno">16</td>
+                <td class="name">Rovelli</td>
+                
+                <td class="post">Manager</td>
+            </tr>
+            
+          </table>
+          <script>
+            $(document).ready(function(){
+            
+                $('.srno').each(function(i, n) {
+               if($(n).text() > 10) 
+                  $(n).css('color', 'green').css('background-color','yellow');
+            });
+            });
+
+            </script>
+       
+       
+            
+       
+            
+    </body>
+</html>
